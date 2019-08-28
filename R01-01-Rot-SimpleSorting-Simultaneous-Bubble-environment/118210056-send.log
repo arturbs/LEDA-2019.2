@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-08-26T16:20:32.736-0300</date>
+  <logger>ARTUR BRITO SOUZA</logger>
+  <level>FINE</level>
+  <message>File 118210056-ARTUR BRITO SOUZA.zip was received. It was sent by ARTUR BRITO SOUZA from IP 150.165.42.206 at 26-08-2019 16*20*32</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-08-26T17:40:40.878-0300</date>
+  <logger>ARTUR BRITO SOUZA</logger>
+  <level>FINE</level>
+  <message>File 118210056-ARTUR BRITO SOUZA.zip was received. It was sent by ARTUR BRITO SOUZA from IP 150.165.42.206 at 26-08-2019 17*40*40</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-08-26T17:47:56.801-0300</date>
+  <logger>ARTUR BRITO SOUZA</logger>
+  <level>FINE</level>
+  <message>File 118210056-ARTUR BRITO SOUZA.zip was received. It was sent by ARTUR BRITO SOUZA from IP 150.165.42.206 at 26-08-2019 17*47*56</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-08-27T01:14:56.052-0300</date>
+  <logger>ARTUR BRITO SOUZA</logger>
+  <level>FINE</level>
+  <message>File 118210056-ARTUR BRITO SOUZA.zip was received. It was sent by ARTUR BRITO SOUZA from IP 192.168.0.18 at 27-08-2019 01*14*56</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-08-27T02:09:36.742-0300</date>
+  <logger>ARTUR BRITO SOUZA</logger>
+  <level>FINE</level>
+  <message>File 118210056-ARTUR BRITO SOUZA.zip was received. It was sent by ARTUR BRITO SOUZA from IP 192.168.0.18 at 27-08-2019 02*09*36</message>
+</record>
