@@ -25,6 +25,38 @@ public class Util {
 	}
 
 	/**
+	 * Checks if the swap is valid, having limited to no conditions to break.
+	 * @param array
+	 *            The array to be validated to be modified, not null
+	 * @param leftIndex
+	 *            One of the target positions
+	 * @param rigthIndex
+	 *            The other target position
+	 */
+	public static void swapValidation (Object[] array, int leftIndex, int rigthIndex) {
+
+		boolean isValid = true;
+
+		if (array == null) {
+			isValid = false;
+		}
+
+		if (leftIndex < 0 || rigthIndex < 0) {
+			isValid = false;
+		}
+
+		if (leftIndex > rigthIndex) {
+			isValid = false;
+		}
+
+		if (rigthIndex > array.length - 1) {
+			isValid =false;
+		}
+
+
+	}
+
+	/**
 	 * It says if a specific number is prime or not.
 	 * 
 	 * @param n
