@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import sorting.AbstractSorting;
+import sorting.divideAndConquer.QuickSort;
 
 public class StudentSortingTest {
 
@@ -36,9 +37,7 @@ public class StudentSortingTest {
 	 * do aluno
 	 */
 	private void getImplementation() {
-		// TODO O aluno deve instanciar sua implementação abaixo ao invés de
-		// null
-		this.implementation = null;
+		this.implementation = new QuickSort<>();
 		Assert.fail("Implementation not provided");
 	}
 
