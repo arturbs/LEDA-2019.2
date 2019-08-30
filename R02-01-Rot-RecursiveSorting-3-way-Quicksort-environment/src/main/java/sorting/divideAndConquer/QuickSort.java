@@ -27,19 +27,30 @@ public class QuickSort<T extends Comparable<T>> extends AbstractSorting<T> {
 	}
 
 	public int organiza(T[] array, int leftIndex, int rigthIndex) {
+//
+//		T pivo = array[rigthIndex];
+//		int i = leftIndex - 1;
+//
+//		for (int j = leftIndex; j <= rigthIndex - 1; j++) {
+//			if (array[j].compareTo(pivo) < 0) {
+//				i++;
+//				Util.swap(array, i, j);
+//			}
+//		}
+//		Util.swap(array, i + 1, rigthIndex);
+//		return i + 1;
 
-		T pivo = array[rigthIndex];
-		int i = leftIndex - 1;
+		T pivo = array[leftIndex];
+		int i = leftIndex;
 
-		for (int j = leftIndex; j <= rigthIndex - 1; j++) {
+		for (int j = leftIndex + 1; j <= rigthIndex; j++) {
 			if (array[j].compareTo(pivo) < 0) {
 				i++;
 				Util.swap(array, i, j);
 			}
-
 		}
-		Util.swap(array, i + 1, rigthIndex);
-		return i + 1;
+		Util.swap(array, i, leftIndex);
+		return  i;
 	}
 
 	public static void main(String[] args) {
@@ -52,10 +63,9 @@ public class QuickSort<T extends Comparable<T>> extends AbstractSorting<T> {
 		System.out.println(Arrays.toString(intArray2));
 
 		quickSort.sort(intArray, 0, intArray.length -1);
-		quickSort.sort(intArray2, 0, intArray.length -1);
-
-
 		System.out.println(Arrays.toString(intArray));
+
+		quickSort.sort(intArray2, 0, intArray2.length -1);
 		System.out.println(Arrays.toString(intArray2));
 
 	}

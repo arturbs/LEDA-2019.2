@@ -7,7 +7,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import sorting.AbstractSorting;
+import sorting.divideAndConquer.MergeSort;
 import sorting.divideAndConquer.QuickSort;
+import sorting.divideAndConquer.threeWayQuicksort.ThreeWayQuickSort;
 
 public class StudentSortingTest {
 
@@ -38,7 +40,9 @@ public class StudentSortingTest {
 	 */
 	private void getImplementation() {
 		this.implementation = new QuickSort<>();
-		Assert.fail("Implementation not provided");
+//		this.implementation = new MergeSort<>();
+//		this.implementation = new ThreeWayQuickSort<>();
+//		Assert.fail("Implementation not provided");
 	}
 
 	public void populaVetorTamanhoPar(Integer[] arrayPadrao) {
