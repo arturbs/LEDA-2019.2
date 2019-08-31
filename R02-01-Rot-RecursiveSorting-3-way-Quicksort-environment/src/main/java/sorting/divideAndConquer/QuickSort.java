@@ -23,35 +23,35 @@ public class QuickSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
 			sort( array, leftIndex, pivoIndex - 1);
 			sort( array, pivoIndex + 1, rightIndex);
-
 		}
 	}
 
 	public int organiza(T[] array, int leftIndex, int rigthIndex) {
-//
-//		T pivo = array[rigthIndex];
-//		int i = leftIndex - 1;
-//
-//		for (int j = leftIndex; j <= rigthIndex - 1; j++) {
-//			if (array[j].compareTo(pivo) < 0) {
-//				i++;
-//				Util.swap(array, i, j);
-//			}
-//		}
-//		Util.swap(array, i + 1, rigthIndex);
-//		return i + 1;
+// pivo a direita.
+		T pivo = array[rigthIndex];
+		int i = leftIndex - 1;
 
-		T pivo = array[leftIndex];
-		int i = leftIndex;
-
-		for (int j = leftIndex + 1; j <= rigthIndex; j++) {
+		for (int j = leftIndex; j <= rigthIndex - 1; j++) {
 			if (array[j].compareTo(pivo) < 0) {
 				i++;
 				Util.swap(array, i, j);
 			}
 		}
-		Util.swap(array, i, leftIndex);
-		return  i;
+		Util.swap(array, i + 1, rigthIndex);
+		return i + 1;
+
+//		pivo a esquerda.
+//		T pivo = array[leftIndex];
+//		int i = leftIndex;
+//
+//		for (int j = leftIndex + 1; j <= rigthIndex; j++) {
+//			if (array[j].compareTo(pivo) < 0) {
+//				i++;
+//				Util.swap(array, i, j);
+//			}
+//		}
+//		Util.swap(array, i, leftIndex);
+//		return  i;
 	}
 
 	public static void main(String[] args) {

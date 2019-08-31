@@ -1,6 +1,7 @@
 package sorting.divideAndConquer;
 
 import sorting.AbstractSorting;
+import util.Util;
 
 import java.util.Arrays;
 
@@ -14,78 +15,70 @@ public class MergeSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
 	@Override
 	public void sort(T[] array, int leftIndex, int rightIndex) {
+	    Util.swapValidation(array, leftIndex, rightIndex);
 	    if (leftIndex < rightIndex) {
-            int middleIndex = (leftIndex + rightIndex) / 2;
-
-
+	        int middleIndex = (leftIndex + (rightIndex - leftIndex) / 2);
+            System.out.println(middleIndex);
 
             sort(array, leftIndex, middleIndex);
             sort(array, middleIndex + 1, rightIndex);
 
-            merge(array, leftIndex, rightIndex);
+            merge(array, leftIndex, middleIndex, rightIndex);
 
         }
 	}
 
-    private void merge(T[] array, int leftIndex, int rightIndex) {
-
-        int middleIndex = (leftIndex + rightIndex) / 2;
-        int halfSize = rightIndex - leftIndex + 1;
-
-        T[] leftCopy = (T[]) new Comparable[halfSize];
-        T[] rigthCopy = (T[]) new Comparable[halfSize];
 
 
-        for (int c = leftIndex; c <= middleIndex; c++) {
-            leftCopy[c - leftIndex] = array[c];
-            System.out.println(Arrays.toString(leftCopy));
+	private void merge(T[] array, int leftIndex, int middleIndex, int rightIndex) {
+
+	    T[] copy = (T[]) new Comparable[rightIndex - leftIndex + 1];
+	    for (int i = leftIndex; i <= rightIndex; i++) {
+	        copy[i - leftIndex] = array[i];
         }
-        for (int c = middleIndex + 1; c <= rightIndex; c++) {
-            rigthCopy[c - (middleIndex + 1)] = array[c];
-        }
-        int i = 0, j = 0, k = 0;
-        while ((i <= leftCopy.length - 2) && (j <= rigthCopy.length - 2)) {
-            System.out.println(leftCopy.length);
-            System.out.println(rigthCopy.length);
 
-            if (leftCopy[i].compareTo(rigthCopy[j]) < 0){
-                array[k] = leftCopy[i];
-                i++;
+        System.out.println(Arrays.toString(copy));
+        System.out.println(copy.length);
+
+	    int middle = (copy.length - 1) / 2;
+
+        int i = leftIndex;
+	    int j = middleIndex + 1;
+	    int k = leftIndex;
+
+	    while ( i <= middleIndex && j <= rightIndex) {
+	        if (copy[i - leftIndex].compareTo(copy[j- leftIndex]) < 0) {
+	            array[k] = copy[i - leftIndex];
+	            i++;
             } else {
-                array[k] = rigthCopy[j];
-                j++;
+	            array[k] = copy[j- leftIndex];
+	            j++;
             }
-            k++;
+	        k++;
+            System.out.println(Arrays.toString(array));
         }
 
-        while (j <= rigthCopy.length - 1) {
-            array[k] = rigthCopy[j];
-            j++;
-            k++;
+	    while (i<= middleIndex) {
+	        array[k] = copy[i - leftIndex];
+	        k++;
+	        i++;
+            System.out.println(Arrays.toString(array));
         }
-
-        while (i <= leftCopy.length - 1) {
-            array[k] = leftCopy[i];
-            i++;
-            k++;
-        }
-
     }
 
     public static void main(String[] args) {
-        Integer[] intArray = new Integer[] { 5, 7, 3, 4 , 9, 2 };
+        Integer[] intArray = new Integer[] { 7, 5, 18, 3, 9, 4, 2 };
         Integer[] intArray2 = new Integer[] { 6, 8, 3, 1, 0, 7, 9, 15, 2, 13, 98, 75, 35, 49, 72, 111, 19, 18, 22, 55};
 
         MergeSort mergeSort = new MergeSort();
 
         System.out.println(Arrays.toString(intArray));
-//        System.out.println(Arrays.toString(intArray2));
+        System.out.println(Arrays.toString(intArray2));
 
         mergeSort.sort(intArray, 0, intArray.length -1);
         System.out.println(Arrays.toString(intArray));
 
-//        mergeSort.sort(intArray2, 0, intArray2.length -1);
-//        System.out.println(Arrays.toString(intArray2));
-
+        mergeSort.sort(intArray2, 0, intArray2.length -1);
+        System.out.println(Arrays.toString(intArray2));
     }
 }

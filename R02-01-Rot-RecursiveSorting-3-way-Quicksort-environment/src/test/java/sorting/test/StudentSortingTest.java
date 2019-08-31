@@ -40,8 +40,8 @@ public class StudentSortingTest {
 	 */
 	private void getImplementation() {
 //		this.implementation = new QuickSort<>();
-//		this.implementation = new MergeSort<>();
-		this.implementation = new ThreeWayQuickSort<>();
+		this.implementation = new MergeSort<>();
+//		this.implementation = new ThreeWayQuickSort<>();
 //		Assert.fail("Implementation not provided");
 	}
 
