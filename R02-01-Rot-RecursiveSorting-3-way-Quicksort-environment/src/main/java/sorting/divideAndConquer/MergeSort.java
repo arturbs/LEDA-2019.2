@@ -38,6 +38,7 @@ public class MergeSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
         for (int c = leftIndex; c <= middleIndex; c++) {
             leftCopy[c - leftIndex] = array[c];
+            System.out.println(Arrays.toString(leftCopy));
         }
         for (int c = middleIndex + 1; c <= rightIndex; c++) {
             rigthCopy[c - (middleIndex + 1)] = array[c];
@@ -70,6 +71,7 @@ public class MergeSort<T extends Comparable<T>> extends AbstractSorting<T> {
         }
 
     }
+
     public static void main(String[] args) {
         Integer[] intArray = new Integer[] { 5, 7, 3, 4 , 9, 2 };
         Integer[] intArray2 = new Integer[] { 6, 8, 3, 1, 0, 7, 9, 15, 2, 13, 98, 75, 35, 49, 72, 111, 19, 18, 22, 55};

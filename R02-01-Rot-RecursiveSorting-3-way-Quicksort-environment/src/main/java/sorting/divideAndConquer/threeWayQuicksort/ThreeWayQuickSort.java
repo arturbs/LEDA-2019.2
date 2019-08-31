@@ -66,8 +66,8 @@ public class ThreeWayQuickSort<T extends Comparable<T>> extends
 			k++;
 			Util.swap(array, b, k );
 		}
-		int[] a = new  int[] {i,b};
-		return a;
+		int[] pivoIndexes = new  int[] {i,b};
+		return pivoIndexes;
 	}
 
 
@@ -85,7 +85,5 @@ public class ThreeWayQuickSort<T extends Comparable<T>> extends
 
 		threeWayQuickSort.sort(intArray2, 0, intArray2.length -1);
 		System.out.println(Arrays.toString(intArray2));
-
 	}
-
 }
