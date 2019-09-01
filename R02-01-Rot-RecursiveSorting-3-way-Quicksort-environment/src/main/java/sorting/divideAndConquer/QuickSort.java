@@ -28,6 +28,7 @@ public class QuickSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
 	public int organiza(T[] array, int leftIndex, int rigthIndex) {
 // pivo a direita.
+
 		T pivo = array[rigthIndex];
 		int i = leftIndex - 1;
 
@@ -40,7 +41,8 @@ public class QuickSort<T extends Comparable<T>> extends AbstractSorting<T> {
 		Util.swap(array, i + 1, rigthIndex);
 		return i + 1;
 
-//		pivo a esquerda.
+//
+
 //		T pivo = array[leftIndex];
 //		int i = leftIndex;
 //

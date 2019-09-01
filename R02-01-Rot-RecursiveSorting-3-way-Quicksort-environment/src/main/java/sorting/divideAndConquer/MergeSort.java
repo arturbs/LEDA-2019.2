@@ -18,7 +18,6 @@ public class MergeSort<T extends Comparable<T>> extends AbstractSorting<T> {
 	    Util.swapValidation(array, leftIndex, rightIndex);
 	    if (leftIndex < rightIndex) {
 	        int middleIndex = (leftIndex + (rightIndex - leftIndex) / 2);
-            System.out.println(middleIndex);
 
             sort(array, leftIndex, middleIndex);
             sort(array, middleIndex + 1, rightIndex);
@@ -37,9 +36,6 @@ public class MergeSort<T extends Comparable<T>> extends AbstractSorting<T> {
 	        copy[i - leftIndex] = array[i];
         }
 
-        System.out.println(Arrays.toString(copy));
-        System.out.println(copy.length);
-
 	    int middle = (copy.length - 1) / 2;
 
         int i = leftIndex;
@@ -55,14 +51,12 @@ public class MergeSort<T extends Comparable<T>> extends AbstractSorting<T> {
 	            j++;
             }
 	        k++;
-            System.out.println(Arrays.toString(array));
         }
 
 	    while (i<= middleIndex) {
 	        array[k] = copy[i - leftIndex];
 	        k++;
 	        i++;
-            System.out.println(Arrays.toString(array));
         }
     }
 
