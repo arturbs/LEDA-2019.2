@@ -17,3 +17,13 @@
   <level>FINE</level>
   <message>File 118210056-ARTUR BRITO SOUZA.zip was received. It was sent by ARTUR BRITO SOUZA from IP 192.168.0.18 at 30-08-2019 16*35*30</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-09-02T16:21:25.232-0300</date>
+  <logger>ARTUR BRITO SOUZA</logger>
+  <level>FINE</level>
+  <message>File 118210056-ARTUR BRITO SOUZA.zip was received. It was sent by ARTUR BRITO SOUZA from IP 150.165.42.180 at 02-09-2019 16*21*25</message>
+</record>
