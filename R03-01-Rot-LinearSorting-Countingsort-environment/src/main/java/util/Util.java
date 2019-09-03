@@ -24,7 +24,7 @@ public class Util {
 		array[j] = temp;
 	}
 
-	public static void swapValidation(Object[] array, int leftIndex, int rigthIndex) {
+	public static boolean swapValidation(Object[] array, int leftIndex, int rigthIndex) {
 
 	    boolean isValid = true;
 
@@ -39,10 +39,11 @@ public class Util {
             isValid = false;
         }
 
-        if ( array == null) {
+        if ( array == null || array.length == 0) {
             isValid = false;
         }
 
+        return isValid;
 	}
 
 	/**
