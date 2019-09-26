@@ -12,8 +12,10 @@ public class RecursiveSingleLinkedListImpl<T> implements LinkedList<T> {
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		if (data == null) {
+			return true;
+		}
+		return false;
 	}
 
 	@Override
