@@ -12,7 +12,7 @@ public class RecursiveSingleLinkedListImpl<T> implements LinkedList<T> {
 
 	@Override
 	public boolean isEmpty() {
-		if (data == null) {
+		if (this.getData() == null) {
 			return true;
 		}
 		return false;
@@ -20,33 +20,69 @@ public class RecursiveSingleLinkedListImpl<T> implements LinkedList<T> {
 
 	@Override
 	public int size() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+		if (data != null) {
+
+		    return 1 + this.getNext().size();
+        }
+        return 0;
 	}
+
+
+
 
 	@Override
 	public T search(T element) {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
+	    if (element != null) {
+	        if (!isEmpty()){
+                if (this.getData().equals(element)) {
+                    return element;
+                }
+                else {
+                    return this.getNext().search(element);
+                }
+            }
+            }
+
+        return null;
 	}
 
 	@Override
 	public void insert(T element) {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
-	}
+	    if (element != null) {
+            if (this.getData() == null) {
+                this.data = element;
+                this.setNext(new RecursiveSingleLinkedListImpl<T>());
+            }
+            else {
+                this.next.insert(element);
+            }
+        }
+    }
 
 	@Override
 	public void remove(T element) {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
-	}
+	    if (element != null) {
+	        if (!isEmpty()) {
+                if (this.getData().equals( element)){
+                    this.setData(this.getNext().getData());
+                    this.setNext(this.getNext().getNext());
+                }
+                else {
+                    this.next.remove(element);
+                }
+            }
+        }
+
+
+    }
 
 	@Override
 	public T[] toArray() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
-	}
+        T[] array = (T[]) new Object[size()];
+        		int index = 0;
+        		
+
+    }
 
 	public T getData() {
 		return data;
@@ -65,3 +101,5 @@ public class RecursiveSingleLinkedListImpl<T> implements LinkedList<T> {
 	}
 
 }
+
+
