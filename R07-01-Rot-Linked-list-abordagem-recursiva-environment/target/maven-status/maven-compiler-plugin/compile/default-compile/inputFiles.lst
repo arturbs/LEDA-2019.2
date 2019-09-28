@@ -1,8 +1,8 @@
-/home/arturbs/LEDA-2019.2/R07-01-Rot-Linked-list-abordagem-recursiva-environment/src/main/java/adt/linkedList/RecursiveDoubleLinkedListImpl.java
-/home/arturbs/LEDA-2019.2/R07-01-Rot-Linked-list-abordagem-recursiva-environment/src/main/java/adt/stack/StackUnderflowException.java
-/home/arturbs/LEDA-2019.2/R07-01-Rot-Linked-list-abordagem-recursiva-environment/src/main/java/adt/stack/Stack.java
-/home/arturbs/LEDA-2019.2/R07-01-Rot-Linked-list-abordagem-recursiva-environment/src/main/java/adt/linkedList/RecursiveSingleLinkedListImpl.java
-/home/arturbs/LEDA-2019.2/R07-01-Rot-Linked-list-abordagem-recursiva-environment/src/main/java/adt/stack/StackOverflowException.java
-/home/arturbs/LEDA-2019.2/R07-01-Rot-Linked-list-abordagem-recursiva-environment/src/main/java/adt/stack/StackRecursiveDoubleLinkedListImpl.java
-/home/arturbs/LEDA-2019.2/R07-01-Rot-Linked-list-abordagem-recursiva-environment/src/main/java/adt/linkedList/DoubleLinkedList.java
-/home/arturbs/LEDA-2019.2/R07-01-Rot-Linked-list-abordagem-recursiva-environment/src/main/java/adt/linkedList/LinkedList.java
+C:\artur\Universidade\CC\leda\LEDA-2019.2\R07-01-Rot-Linked-list-abordagem-recursiva-environment\src\main\java\adt\linkedList\LinkedList.java
+C:\artur\Universidade\CC\leda\LEDA-2019.2\R07-01-Rot-Linked-list-abordagem-recursiva-environment\src\main\java\adt\stack\StackUnderflowException.java
+C:\artur\Universidade\CC\leda\LEDA-2019.2\R07-01-Rot-Linked-list-abordagem-recursiva-environment\src\main\java\adt\linkedList\RecursiveDoubleLinkedListImpl.java
+C:\artur\Universidade\CC\leda\LEDA-2019.2\R07-01-Rot-Linked-list-abordagem-recursiva-environment\src\main\java\adt\stack\StackOverflowException.java
+C:\artur\Universidade\CC\leda\LEDA-2019.2\R07-01-Rot-Linked-list-abordagem-recursiva-environment\src\main\java\adt\linkedList\RecursiveSingleLinkedListImpl.java
+C:\artur\Universidade\CC\leda\LEDA-2019.2\R07-01-Rot-Linked-list-abordagem-recursiva-environment\src\main\java\adt\stack\Stack.java
+C:\artur\Universidade\CC\leda\LEDA-2019.2\R07-01-Rot-Linked-list-abordagem-recursiva-environment\src\main\java\adt\linkedList\DoubleLinkedList.java
+C:\artur\Universidade\CC\leda\LEDA-2019.2\R07-01-Rot-Linked-list-abordagem-recursiva-environment\src\main\java\adt\stack\StackRecursiveDoubleLinkedListImpl.java

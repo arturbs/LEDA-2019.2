@@ -31,7 +31,7 @@ public interface Stack<T> {
 	 * 
 	 * @return
 	 */
-	public T top();
+	public T top() throws StackUnderflowException;
 
 	/**
 	 * Returns true if the stack is empty or false, otherwise.
