@@ -10,7 +10,12 @@ public class SingleLinkedListImpl<T> implements LinkedList<T> {
 
 	@Override
 	public boolean isEmpty() {
-		if (size() == 0) {
+//		if (size() == 0) {
+//			return true;
+//		}
+//		return false;
+
+		if (this.head.data == null) {
 			return true;
 		}
 		return false;
