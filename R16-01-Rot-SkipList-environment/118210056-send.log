@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-11T23:27:37.905-0300</date>
+  <logger>ARTUR BRITO SOUZA</logger>
+  <level>FINE</level>
+  <message>File 118210056-ARTUR BRITO SOUZA.zip was received. It was sent by ARTUR BRITO SOUZA from IP 192.168.0.18 at 11-11-2019 23*27*37</message>
+</record>
